@@ -2,15 +2,22 @@
 A simple interpreter for the esoteric language brainfuck written in rust!
 
 ## Usage
-**If using cargo run:** \
+If using cargo \
+\
 `cargo run {path_to_brainfuck_file.txt} {memory array size}`
 \
-**If you built the executable**
+\
+If you built the executable
+\
 `./brainf_interpreter.exe {path_to_file.txt} {memory array size}`\
 \
+\
 For example: \
+\
 `./brainf_interpreter.exe ./example.brainf 128` \
 **OR**
+\
+\
 `cargo run ./example.brainf 128`
 
 ## Requirements
