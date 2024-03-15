@@ -12,7 +12,6 @@ If you built the executable
 \
 \
 For example: \
-\
 `./brainf_interpreter.exe ./example.brainf 128` \
 **OR**
 \
