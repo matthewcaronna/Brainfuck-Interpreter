@@ -26,4 +26,4 @@ Clone the repository and open the root directory \
 Run `cargo build --release` to build the program into an executable \
  **OR** run `cargo run` to run the program without building it \
 
-If you built the executable, it can be found in the /target/ directory \
+If you built the executable, it can be found in the /target/ directory
