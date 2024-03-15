@@ -3,7 +3,7 @@ A simple interpreter for the esoteric language brainfuck written in rust!
 
 ## Usage
 \
-Simply supply path to brainfuck file and the size of the memory array\
+You need to supply path to brainfuck file and the size of the memory array\
 \
 If using cargo \
 `cargo run {path_to_brainfuck_file.txt} {memory array size}`
