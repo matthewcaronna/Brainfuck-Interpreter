@@ -8,7 +8,7 @@ If using cargo \
 \
 If you built the executable
 \
-`./brainf_interpreter.exe {path_to_file.txt} {memory array size}`\
+`./brainf_interpreter {path_to_file.txt} {memory array size}`\
 \
 For example: \
 \
