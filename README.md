@@ -10,11 +10,10 @@ If you built the executable
 \
 `./brainf_interpreter.exe {path_to_file.txt} {memory array size}`\
 \
-\
 For example: \
-`./brainf_interpreter.exe ./example.brainf 128` \
-**OR**
 \
+`./brainf_interpreter.exe ./example.brainf 128` \
+**OR**\
 \
 `cargo run ./example.brainf 128`
 
