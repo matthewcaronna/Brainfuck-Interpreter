@@ -11,17 +11,16 @@ fn main() {
 
         let input = fs::read_to_string(filename).unwrap();
 
-        println!("{}", interpret(&input, mem_size));
+        interpret(&input, mem_size);
     }
 }
 
-fn interpret(input: &str, mem_size: i32) -> String {
+fn interpret(input: &str, mem_size: i32) {
     let mut ptr: i32 = 0;
     let mut memory: Vec<i32> = vec![0; mem_size as usize];
     let mut loop_indexes: Vec<i32> = Vec::new();
     let mut no_loop = false;
     let mut nested = 0;
-    let mut output = String::new();
 
     let tokens = input.split("").collect::<Vec<&str>>();
     let mut i = 0;
@@ -67,7 +66,7 @@ fn interpret(input: &str, mem_size: i32) -> String {
                 }
                 "." => {
                     let ascii: u8 = memory[ptr as usize].try_into().unwrap();
-                    output += &String::from(ascii as char);
+                    print!("{}", ascii as char);
                 }
                 "," => {
                     let byte = std::io::stdin().bytes().next().unwrap().unwrap();
@@ -90,5 +89,4 @@ fn interpret(input: &str, mem_size: i32) -> String {
         }
         i += 1;
     }
-    return output;
 }
